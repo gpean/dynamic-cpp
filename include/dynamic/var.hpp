@@ -187,7 +187,7 @@ public :
     /// var comparison functor
     struct less_var {
         /// var comparison function
-        bool operator () (const var& lhs, const var& rhs);
+        bool operator () (const var& lhs, const var& rhs) const;
     };
 
     /// vector type

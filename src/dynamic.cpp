@@ -35,7 +35,7 @@ namespace dynamic {
 
 const var none;
 
-bool var::less_var::operator () (const var& lhs, const var& rhs) {
+bool var::less_var::operator () (const var& lhs, const var& rhs) const {
     // if the two vars are of different types, order by type
     code lht = lhs.type(), rht = rhs.type();
     if (lht != rht) return lht < rht;
